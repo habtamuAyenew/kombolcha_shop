@@ -1,0 +1,55 @@
+/* General Styles for the Navbar */
+nav {
+    background-color: #333; /* Dark background */
+    color: white;          /* White text */
+    padding: 10px 20px;    /* Space inside the navbar */
+    display: flex;         /* Flexbox layout */
+    justify-content: space-between; /* Space between left and right items */
+    align-items: center;   /* Center items vertically */
+}
+
+/* Navbar Branding/Logo */
+nav .logo {
+    font-size: 1.5rem;     /* Larger font size for logo */
+    font-weight: bold;     /* Bold text */
+    text-transform: uppercase; /* Uppercase for branding */
+}
+
+/* Navbar Links */
+nav .nav-links {
+    display: flex;         /* Horizontal layout */
+    list-style: none;      /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-links li {
+    margin: 0 15px;        /* Space between links */
+}
+
+nav .nav-links a {
+    color: white;          /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem;       /* Standard font size */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav .nav-links a:hover {
+    color: #f39c12;        /* Highlight color on hover */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    nav .nav-links {
+        flex-direction: column; /* Vertical layout for links */
+        margin-top: 10px;
+    }
+
+    nav .nav-links li {
+        margin: 5px 0; /* Add space between links */
+    }
+}
